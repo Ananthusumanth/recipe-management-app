@@ -1,0 +1,25 @@
+GET http://localhost:3000/recipes
+
+####
+
+POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+    "title": "Fruit",
+    "ingredients": "orange",
+    "instructions": "citrus flavor.",
+    "categories" : "Beverage/Flavoring"
+}
+
+####
+
+PUT http://localhost:3000/recipes/1
+Content-Type: application/json
+
+{
+    "title": "F",
+    "ingredients": "Lemon",
+    "instructions": "citrus flavor.",
+    "categories" : "Beverage/Flavoring"
+}
