@@ -5,7 +5,7 @@ const {open} = require("sqlite")
 const sqlite3 = require("sqlite3")
 const app = express()
 app.use(express.json())
-app.use(cors())
+app.use(cors());
 
 
 let db = null
@@ -80,4 +80,4 @@ app.put("/recipes/:id", async (request, response) => {
     response.send({message})
 })
 
-module.export = app
+module.exports = app
